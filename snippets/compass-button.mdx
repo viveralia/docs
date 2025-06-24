@@ -1,0 +1,7 @@
+export const CompassButton = (props) => {
+  return (
+    <a href={props.href} className='relative select-none inline-flex items-center justify-center whitespace-nowrap gap-2 rounded-md text-[14px] font-medium transition-colors duration-100 outline-none focus-visible:z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary cursor-pointer disabled:cursor-not-allowed bg-[#f35820] text-white border border-orange-800 shadow-button hover:bg-orange-800 pressed:bg-orange-900 pressed:border-orange-900 pressed:shadow-inset-t-black-100 h-8 px-3 py-2'>
+      {props.label}
+    </a>
+  )
+}

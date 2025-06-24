@@ -10,6 +10,9 @@
     "light": "#f35820",
     "dark": "#f35820"
   },
+  "fonts": {
+    "family": "Inter"
+  },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
