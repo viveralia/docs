@@ -2,6 +2,9 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
   "name": "Fingerprint Docs",
+  "icons": {
+    "library": "lucide"
+  },
   "colors": {
     "primary": "#f35820",
     "light": "#f35820",
