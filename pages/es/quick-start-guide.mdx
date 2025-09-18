@@ -1,0 +1,52 @@
+---
+title: Guía de inicio rápido
+description: Cómo agregar rápidamente la inteligencia de dispositivos de Fingerprint a tu sitio web o aplicación móvil.
+icon: "code"
+---
+
+[Fingerprint](https://fingerprint.com/) es una plataforma de inteligencia de dispositivos que ayuda a las empresas a proteger sus aplicaciones contra fraudes, robo de cuentas, spam, bots y otras actividades maliciosas. Las capacidades de Fingerprint incluyen:
+
+- [**Identificación de visitantes**](https://fingerprint.com/products/identification/): Reconoce navegadores y dispositivos móviles que regresan con una precisión líder en la industria, sin depender de cookies ni direcciones IP. Cada visitante recibe un ID único, como `e0srMXYG7PjFCAbE0yIH`, que no puede eliminarse, dura mucho más que una cookie y permanece igual incluso si el visitante usa el modo incógnito o una VPN.
+- [**Señales inteligentes (Smart signals)**](https://fingerprint.com/products/smart-signals/): Detecta configuraciones sospechosas de dispositivos como bots, usuarios de VPN, navegadores manipulados o teléfonos con jailbreak gracias a nuestros insights accionables de inteligencia de dispositivos.
+
+En esta guía, te mostraremos cómo comenzar rápidamente a identificar a tus visitantes usando Fingerprint para que lo pruebes tú mismo. Si deseas una demo práctica de las capacidades de Fingerprint, consulta nuestro [Playground](https://demo.fingerprint.com/playground) o explora los [Casos de uso](https://demo.fingerprint.com/). Si quieres una comprensión más profunda de nuestra plataforma, consulta la [Introducción](https://dev.fingerprint.com/docs/introduction).
+
+## 1. Crear una cuenta
+
+1. [Regístrate para una prueba gratuita](https://dashboard.fingerprint.com/signup?utm_source=https://dev.fingerprint.com/docs/quick-start-guide) para comenzar. No se requiere tarjeta de crédito.
+2. Puedes elegir almacenar todos tus datos de Fingerprint en Estados Unidos, Alemania o India. Consulta [Regiones](https://dev.fingerprint.com/docs/regions) para más información.
+
+## 2. Obtén tu clave de API
+
+1. En el Dashboard, ve a [**API Keys**](https://dashboard.fingerprint.com/api-keys) en el menú lateral.
+2. En **Public Keys**, copia o guarda tu clave pública de API para ejecutar los ejemplos de abajo.
+
+Si acabas de crear tu cuenta, espera uno o dos minutos para que tu clave de API se propague antes de usarla.
+
+<Frame>
+  <img
+    src="/images/0fbf312623d4ba84af09917ff87cdc2cca3ead7fcdd6210697128d76563b93f0-CleanShot_2024-11-06_at_11.00.582x.png"
+    alt="Screenshot of a deployment confirmation message that says All checks have passed."
+    style={{ borderRadius: "0.5rem" }}
+  />
+</Frame>
+
+## 3. Agrega el agente del lado del cliente
+
+Una vez que hayas creado tu cuenta y obtenido tu clave pública de API, puedes [agregar el agente de JavaScript](https://dev.fingerprint.com/docs/install-the-javascript-agent) a tu sitio web o agregar un SDK nativo a tu aplicación [iOS](https://dev.fingerprint.com/docs/ios) o [Android](https://dev.fingerprint.com/docs/native-android-integration). El agente recopila atributos del navegador o dispositivo, los envía al backend de Fingerprint y recibe un **visitor ID** para ese navegador o dispositivo móvil.
+
+La forma más sencilla de agregar el agente es ir a la página [**SDKs & integrations**](https://dashboard.fingerprint.com/integrations) y elegir tu biblioteca web o móvil preferida.
+
+<Frame>
+  <img
+    src="/images/9a76d28875166b2b3826b80fcecc4e0f5257f8b4fc1469d2cfee3ddc08766356-CleanShot_2024-11-06_at_11.04.032x.png"
+    alt="Screenshot of a deployment confirmation message that says All checks have passed."
+    style={{ borderRadius: "0.5rem" }}
+  />
+</Frame>
+
+Por ejemplo, puedes instalar el cargador del agente de JavaScript como un paquete de NPM:
+
+```shell NPM
+npm install @fingerprintjs/fingerprintjs-pro
+```

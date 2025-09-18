@@ -1,0 +1,52 @@
+---
+title: Quick Start Guide
+description: How to quickly add Fingerprint device intelligence to your website or mobile app.
+icon: "code"
+---
+
+[Fingerprint](https://fingerprint.com/) is a device intelligence platform that helps businesses protect their applications from fraud, account takeover, spam, bots, and other malicious activity. Fingerprint capabilities include:
+
+- [**Visitor identification**](https://fingerprint.com/products/identification/): Recognize returning browsers and mobile devices with industry-leading accuracy, without relying on cookies or IP addresses. Every visitor gets a visitor ID like `e0srMXYG7PjFCAbE0yIH` that cannot be deleted, lasts much longer than a cookie, and stays the same even if the visitor uses incognito mode or a VPN.
+- [**Smart signals**](https://fingerprint.com/products/smart-signals/): Detect suspicious device configurations like bots, VPN users, tampered browsers, or jailbroken phones with our actionable device intelligence insights.
+
+In this guide, we will quickly get you started identifying your visitors using Fingerprint so you can test it out yourself. If you would like a practical demo of Fingerprint capabilities first, see our [Playground](https://demo.fingerprint.com/playground) or explore [Use cases](https://demo.fingerprint.com/). If you want a deeper understanding of our platform, see [Introduction](https://dev.fingerprint.com/docs/introduction).
+
+## 1. Create an account
+
+1. [Sign up for your free trial](https://dashboard.fingerprint.com/signup?utm_source=https://dev.fingerprint.com/docs/quick-start-guide) to get started, no credit card is required.
+2. You can choose to store all your Fingerprint data in the United States, Germany, or India. See [Regions](https://dev.fingerprint.com/docs/regions) for more information.
+
+## 2. Get your API Key
+
+1. In the Dashboard, navigate to [**API Keys**](https://dashboard.fingerprint.com/api-keys) in the left-hand menu.
+2. Under **Public Keys**, copy or save your public API key to run the examples below.
+
+If you've just created your account, please allow a minute or two for your API key to propagate before using it.
+
+<Frame>
+  <img
+    src="/images/0fbf312623d4ba84af09917ff87cdc2cca3ead7fcdd6210697128d76563b93f0-CleanShot_2024-11-06_at_11.00.582x.png"
+    alt="Screenshot of a deployment confirmation message that says All checks have passed."
+    style={{ borderRadius: "0.5rem" }}
+  />
+</Frame>
+
+## 3. Add the client-side agent
+
+Once you've created your account and got your public API key, you can [add the JavaScript agent](https://dev.fingerprint.com/docs/install-the-javascript-agent) to your website or add a native SDK to your [iOS](https://dev.fingerprint.com/docs/ios) or [Android app](https://dev.fingerprint.com/docs/native-android-integration). The agent collects browser or device attributes, sends them to the Fingerprint backend, and receives a **visitor ID** for that browser or mobile device.
+
+The easiest way to add the agent is by going to the [**SDKs & integrations**](https://dashboard.fingerprint.com/integrations) page and picking your preferred web or mobile library.
+
+<Frame>
+  <img
+    src="/images/9a76d28875166b2b3826b80fcecc4e0f5257f8b4fc1469d2cfee3ddc08766356-CleanShot_2024-11-06_at_11.04.032x.png"
+    alt="Screenshot of a deployment confirmation message that says All checks have passed."
+    style={{ borderRadius: "0.5rem" }}
+  />
+</Frame>
+
+For example, you can install the JavaScript agent loader as an NPM package:
+
+```shell NPM
+npm install @fingerprintjs/fingerprintjs-pro
+```

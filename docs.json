@@ -1,79 +1,116 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",
+  "theme": "mint",
   "name": "Fingerprint Docs",
+  "colors": {
+    "primary": "#FF5E24",
+    "light": "#FF5E24",
+    "dark": "#FF5E24"
+  },
+  "favicon": "/favicon.svg",
   "icons": {
     "library": "lucide"
   },
-  "colors": {
-    "primary": "#f35820",
-    "light": "#f35820",
-    "dark": "#f35820"
+  "appearance": {
+    "default": "light",
+    "strict": false
   },
-  "fonts": {
-    "family": "Inter"
+  "background": {
+    "color": {
+      "light": "#FAFAF8"
+    }
   },
-  "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Guides",
-        "groups": [
+        "language": "en",
+        "tabs": [
           {
-            "group": "Get Started",
-            "pages": ["welcome"]
+            "tab": "Home",
+            "icon": "house",
+            "href": "/"
           },
           {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+            "tab": "Guides",
+            "icon": "book-open",
+            "groups": [
+              {
+                "group": "Getting started",
+                "pages": ["pages/en/quick-start-guide"]
+              }
             ]
+          },
+          {
+            "tab": "API reference",
+            "icon": "code",
+            "groups": [
+              {
+                "group": "Fingerprint Server API",
+                "pages": ["pages/en/api/fingerprint/delete-data-by-visitor-id"]
+              },
+              {
+                "group": "Management API",
+                "pages": [
+                  {
+                    "group": "Endpoints",
+                    "openapi": "https://management-api.fpjs.io/docs-yaml"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Changelog (JS Agent)",
+            "icon": "megaphone",
+            "href": "https://docs.fingerprint.com"
           }
         ]
       },
       {
-        "tab": "API Reference",
-        "groups": [
+        "language": "es",
+        "tabs": [
           {
-            "group": "API Documentation",
-            "pages": ["api-reference/introduction"]
+            "tab": "Home",
+            "icon": "house",
+            "href": "/"
           },
           {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+            "tab": "Guides",
+            "icon": "book-open",
+            "groups": [
+              {
+                "group": "Getting started",
+                "pages": ["pages/es/quick-start-guide"]
+              }
             ]
+          },
+          {
+            "tab": "API reference",
+            "icon": "code",
+            "groups": [
+              {
+                "group": "Fingerprint Server API",
+                "openapi": "/openapi/fingerprint-server-api.yaml"
+              },
+              {
+                "group": "Management API",
+                "pages": [
+                  {
+                    "group": "Endpoints",
+                    "openapi": "https://management-api.fpjs.io/docs-yaml"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Changelog (JS Agent)",
+            "icon": "megaphone",
+            "href": "https://docs.fingerprint.com"
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -82,21 +119,21 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Contact Sales",
+        "href": "https://fingerprint.com/contact-sales/"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Get Started",
+      "href": "https://dashboard.fingerprint.com/signup"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://twitter.com/FingerprintJs/",
+      "github": "https://github.com/fingerprintjs/fingerprintjs/",
+      "linkedin": "https://www.linkedin.com/company/fingerprintjs/"
     }
   }
 }
